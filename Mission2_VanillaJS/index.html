@@ -1,95 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Black Death | Mochammad Lutfi Faturachman </title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/index.js"></script>
-    <title>The Story of Black Death in Europe | Lutfi </title>
-</head>
-
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="./assets/js/index.js"></script>
+   </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="container">
-            <input type="checkbox" name="" id="check">
-            
-            <div class="logo-container">
-                <h3 class="logo">OUR<span>History</span></h3>
-            </div>
-
-            <div class="nav-btn">
-                <div class="nav-links">
-                    <ul>
-                        <li class="nav-link" style="--i: .6s">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="nav-link" style="--i: .85s">
-                            <a href="#">Topic<i class="fas fa-caret-down"></i></a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li class="dropdown-link">
-                                        <a href="#">Apa itu Black Death?</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#">Link 2</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#">Link 2</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#">Link 2</a>
-                                    </li>
-                                    <div class="arrow"></div>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-link" style="--i: 1.35s">
-                            <a href="#">About</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="hamburger-menu-container">
-                <div class="hamburger-menu">
-                    <div></div>
-                </div>
-            </div>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div class="navbar">
+        <i class='bx bx-menu'></i>
+        <div class="logo"><a href="#">The Black Death</a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">CodingLab</span>
+            <i class='bx bx-x' ></i>
+          </div>
+          <ul class="links">
+            <li><a href="#">HOME</a></li>
+            <li>
+              <a href="#">TOPIC</a>
+              <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="#">Apa itu Maut Hitam? <i>(Black Death)</i> </a></li>
+                <li><a href="#">Statistika Kematian pada Era Maut Hitam</a></li>
+                <li><a href="#">Kapan Era Maut Hitam Terjadi?</a></li>
+                <li><a href="#">Cinta</a></li>
+              </ul>
+            </li>
+            <li><a href="#">ABOUT</a></li>
+          </ul>
         </div>
-    </header>
-    <!-- HEADER -->
+      </div>
+    </nav>
+  </header>
+  <!-- HEADER -->
 
-    <!-- CONTENT -->
-    <main>
-      <section class="slider-wrapper">
- 
-        <button class="slide-arrow" id="slide-arrow-prev">
-          &#8249;
-        </button>
-         
-        <button class="slide-arrow" id="slide-arrow-next">
-          &#8250;
-        </button>
-         
-        <ul class="slides-container" id="slides-container">
-          <li class="slide"><img src="https://www.science.org/do/10.1126/science.abc7832/full/ca_0515_Inequality_leadblackdeath_1280x720.jpg" class="center"</li>
-          <li class="slide">dfadsf</li>
-          <li class="slide">24353r</li>
-          <li class="slide">;'l'sdag</li>
-        </ul>
-      </section>
-      <section class="content-wrapper">
-          djklsfjakljflkajkfl
-          sdfklajflkassdf
-          <img src="./assets/img/background.jpg"/>
-      </section>
-    </main>
-    <!-- CONTENT -->
+  <!-- CONTENT -->
+  <!-- SLIDER -->
+  <section>
+  <div class="slideshow-container">
 
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://www.science.org/do/10.1126/science.abc7832/full/ca_0515_Inequality_leadblackdeath_1280x720.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
     
-</body>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://wallpaperaccess.com/full/3473628.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://www.history.com/.image/t_share/MTcxMzkxMTIwMzgxNjUwNjEx/black-death-gettyimages-515359722.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+  
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+  
+  </section>
+  <!-- SLIDER -->
+  <!-- CONTENT -->
 
+  <!-- FOOTER -->
+  <!-- FOOTER -->
+
+</body>
 </html>
