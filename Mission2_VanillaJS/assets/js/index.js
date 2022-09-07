@@ -1,17 +1,3 @@
-// search-box open close js code
-let navbar = document.querySelector(".navbar");
-let searchBox = document.querySelector(".search-box .bx-search");
-// let searchBoxCancel = document.querySelector(".search-box .bx-x");
-
-searchBox.addEventListener("click", ()=>{
-  navbar.classList.toggle("showInput");
-  if(navbar.classList.contains("showInput")){
-    searchBox.classList.replace("bx-search" ,"bx-x");
-  }else {
-    searchBox.classList.replace("bx-x" ,"bx-search");
-  }
-});
-
 // sidebar open close js code
 let navLinks = document.querySelector(".nav-links");
 let menuOpenBtn = document.querySelector(".navbar .bx-menu");
@@ -38,4 +24,30 @@ jsArrow.onclick = function() {
  navLinks.classList.toggle("show3");
 }
 
-// IMAGE SLIDER
+// animations
+// Update : added throttle to increase performance
+// Parallax effect
+// Adapted from @ilonacodes article ->  https://link.medium.com/7fFiON6Q1X
+
+// Update : added throttle to increase performance
+window.addEventListener('scroll', throttle(parallax, 14));
+
+function throttle(fn, wait) {
+  var time = Date.now();
+  return function() {
+    if ((time + wait - Date.now()) < 0) {
+      fn();
+      time = Date.now();
+    }
+  }
+};
+
+function parallax() {
+  var scrolled = window.pageYOffset;
+  var parallax = document.querySelector(".parallax");
+  // You can adjust the 0.4 to change the speed
+	var coords = (scrolled * .4) + 'px'
+  parallax.style.transform = 'translateY(' + coords + ')';
+};
+
+//animation

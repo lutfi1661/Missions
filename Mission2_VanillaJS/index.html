@@ -14,20 +14,20 @@
     <nav>
       <div class="navbar">
         <i class='bx bx-menu'></i>
-        <div class="logo"><a href="#">The Black Death</a></div>
+        <div class="logo"><a href="#home">The Black Death</a></div>
         <div class="nav-links">
           <div class="sidebar-logo">
-            <span class="logo-name">CodingLab</span>
+            <span class="logo-name">History</span>
             <i class='bx bx-x' ></i>
           </div>
           <ul class="links">
-            <li><a href="#">HOME</a></li>
+            <li><a href="#home">HOME</a></li>
             <li>
               <a href="#">TOPIC</a>
               <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
               <ul class="htmlCss-sub-menu sub-menu">
-                <li><a href="#">Apa itu Maut Hitam? <i>(Black Death)</i> </a></li>
-                <li><a href="#">Statistika Kematian pada Era Maut Hitam</a></li>
+                <li><a href="#apa-itu-maut-hitam">Apa itu Maut Hitam?</a></li>
+                <li><a href="#gejala-maut-hitam">Gejala Maut Hitam</a></li>
                 <li><a href="#">Kapan Era Maut Hitam Terjadi?</a></li>
                 <li><a href="#">Cinta</a></li>
               </ul>
@@ -41,71 +41,53 @@
   <!-- HEADER -->
 
   <!-- CONTENT -->
-  <!-- SLIDER -->
-  <section>
-  <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="https://www.science.org/do/10.1126/science.abc7832/full/ca_0515_Inequality_leadblackdeath_1280x720.jpg" style="width:100%">
-      <div class="text">Caption Text</div>
+  <section id="home">
+    <div class="container">
+      <div class="landing-page">
+        <img src="./assets/img/landing-page.jpg">
+        <!-- <div class="appear"> -->
+          <div class="circle-effect1"></div>
+          <!-- <div class="circle-effect2"></div> -->
+          <div class="centered">
+            <div class="script1">The Story of</div>
+            <div class="script2">Black Death</div>
+            <div class="script1">in Europe</div>
+          </div>
+        </div>
+        <a href="#apa-itu-maut-hitam"><div class="arrow-landing"></div></a>
+        <!-- <img class="arrow-down" src="https://cdn-icons-png.flaticon.com/512/25/25623.png"> -->
+      </div>
     </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="https://wallpaperaccess.com/full/3473628.jpg" style="width:100%">
-      <div class="text">Caption Two</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="https://www.history.com/.image/t_share/MTcxMzkxMTIwMzgxNjUwNjEx/black-death-gettyimages-515359722.jpg" style="width:100%">
-      <div class="text">Caption Three</div>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-  
-    <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-  
   </section>
-  <!-- SLIDER -->
+  <section id="apa-itu-maut-hitam">
+    <div class="sub-container">
+      <h1 class="text-center" style="font-family: history;">Apa itu Maut Hitam?</h1><br>
+      <p class="text-justify">
+        Wabah Hitam atau Maut Hitam (juga dikenal sebagai The Black Death) adalah wabah pes yang terjadi di Eurasia Barat dan Afrika Utara 1346-1353. Ini adalah pandemi paling fatal yang tercatat dalam sejarah manusia, menyebabkan kematian dari 75-200 juta orang, memuncak di Eropa 1347-1351. Pes disebabkan oleh bakteri Yersinia pestis disebarkan oleh kutu, tetapi juga dapat mengambil bentuk sekunder di mana menyebar melalui kontak orang-ke-orang melalui aerosol menyebabkan wabah septikemia atau pneumonia.
+      </p>
+      <p class="text-justify">
+        The Black Death adalah awal dari pandemi wabah kedua. Wabah tersebut menciptakan pergolakan agama, sosial dan ekonomi, dengan efek mendalam pada perjalanan sejarah Eropa.
+      </p>
+      <p class="text-justify">
+        Asal usul Black Death masih diperdebatkan. Pandemi ini berasal dari Asia Tengah atau Asia Timur tetapi kemunculan definitif pertamanya adalah di Krimea pada tahun 1347. Dari Krimea, kemungkinan besar dibawa oleh kutu yang hidup pada tikus hitam yang bepergian di Kapal Genoa, menyebar melalui Cekungan Mediterania dan mencapai Afrika Utara, Asia Barat, dan seluruh Eropa melalui Konstantinopel, Sisilia, dan Semenanjung Italia. Ada bukti bahwa begitu datang ke darat, Black Death terutama menyebar dari orang ke orang sebagai wabah pneumonia, sehingga menjelaskan penyebaran epidemi yang cepat ke pedalaman, yang lebih cepat dari yang diperkirakan jika vektor utamanya adalah kutu tikus yang menyebabkan wabah pandemik. Pada tahun 2022, ditemukan bahwa ada lonjakan kematian mendadak di tempat yang sekarang disebut Kirgistan dari Maut Hitam pada akhir 1330-an; ketika dikombinasikan dengan bukti genetik, ini menyiratkan bahwa penyebaran awal mungkin bukan karena penaklukan Mongol pada abad ke-14, seperti yang diperkirakan sebelumnya.
+      </p>
+    </div>
+  </section>
+  <section id="gejala-maut-hitam">
+    <header class="parallax-wrapper">
+      <div class="parallax">
+        <h1>Gejala Maut Hitam</h1>
+      </div>
+    </header>
+    <main class="sub-container">
+      <p class="text-justify">
+        Wabah pes Black Death memasuki Eropa pada Oktober 1347, ketika 12 kapal dagang dari arah Laut Hitam berlabuh di Messina, Sisilia, Italia. Setibanya di dermaga, sebagian besar awak kapal telah tewas dan yang masih hidup menderita bisul hitam bernanah. Sebelum kedatangan kapal tersebut, masyarakat Eropa telah mendengar desas-desus mengenai wabah pes yang menyebar dari China dan Asia Tengah melalui jalur pedagangan. Ternyata, wabah ini memang menyerang China, India, Persia, Suriah, dan Mesir, sejak awal 1340-an. Pada 1348, wabah telah menyebar di Spanyol dan Perancis, yang disusul Austria, Hongaria, Swiss, Jerman, dan Inggris. Penyebaran wabah Black Death memuncak di negara-negara Eropa antara 1347-1351.
+      </p>
+      <p class="text-justify">
+        Gejala Black Death umumnya adalah adanya pembengkakan seperti bisul yang mengeluarkan nanah. Para penderita juga mengalami demam, menggigil, muntah, diare, dan nyeri, sebelum akhirnya meninggal. Baca juga: Biografi Ar-Razi, Ilmuwan Terkemuka Penemu Penyakit Cacar Wabah Black Death menyerang sistem limfatik yang menyebabkan pembengkakan di kelenjar getah bening, dan apabila tidak diobati, infeksi dapat menyebar ke darah atau paru-paru. Wabah ini sangat menular, bahkan orang yang sehat bisa meninggal dalam hitungan jam setelah melakukan kontak dengan penderita.
+      </p>
+    </main>
+  </section>
   <!-- CONTENT -->
 
   <!-- FOOTER -->
