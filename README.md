@@ -1,2 +1,3 @@
 # Missions
-Assignment repository
+Nama  : Mochammad Lutfi Faturachman
+NIM   : 201524052
